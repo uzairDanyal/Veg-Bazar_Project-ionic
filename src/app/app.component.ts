@@ -25,7 +25,13 @@ export class AppComponent {
       title: 'Login',
       url: '/login',
       icon: 'ios-log-in'
+    },
+    {
+      title: 'Register',
+      url: '/register',
+      icon: 'md-create'
     }
+
   ];
 
   constructor(
