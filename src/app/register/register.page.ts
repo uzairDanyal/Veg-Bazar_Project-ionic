@@ -8,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class RegisterPage implements OnInit {
 
   constructor() { }
-
+  a: boolean;
   ngOnInit() {
+
+  }
+
+  storeReg(){
+    this.a = true;
+  }
+
+  userReg(){
+    this.a = false;
   }
 
 }
