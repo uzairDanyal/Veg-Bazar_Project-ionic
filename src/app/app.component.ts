@@ -25,10 +25,15 @@ export class AppComponent {
       title: 'Login',
       url: '/login',
       icon: 'ios-log-in'
+    },   
+     {
+      title: 'Register-user',
+      url: '/register',
+      icon: 'md-create'
     },
     {
-      title: 'Register',
-      url: '/register',
+      title: 'Register-store',
+      url: '/register-store',
       icon: 'md-create'
     }
 

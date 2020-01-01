@@ -26,6 +26,14 @@ const routes: Routes = [
   {
     path: 'forget-password',
     loadChildren: () => import('./forget-password/forget-password.module').then( m => m.ForgetPasswordPageModule)
+  },
+  {
+    path: 'register-store',
+    loadChildren: () => import('./register-store/register-store.module').then( m => m.RegisterStorePageModule)
+  },
+  {
+    path: 'reg-store',
+    loadChildren: () => import('./reg-store/reg-store.module').then( m => m.RegStorePageModule)
   }
 ];
 

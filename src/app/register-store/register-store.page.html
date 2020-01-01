@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
-    <ion-title class="ion-text-center">Sign-Up</ion-title>
+    <ion-title class="ion-text-center">Sign-up</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -16,15 +16,21 @@
     <ion-label>Register Admin</ion-label>
   </ion-item>
 -->
-  <ion-grid>
+
+  <ion-grid >
     <ion-row color="justify-content-center">
       <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
         <div class="ion-text-center">
-          <h3>Register Yourself</h3>
+          <h3>Register Your Store</h3>
         </div>
         <div class="ion-padding">
           <ion-item>
-            <ion-input name="name" type="text" placeholder="Name"></ion-input>
+            <ion-label position="floating">Store Name</ion-label>
+            <ion-input name="store name" type="text" placeholder=""></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Store Address</ion-label>
+            <ion-input name="store address" type="text" placeholder=""></ion-input>
           </ion-item>
           <ion-item>
             <ion-input name="email" type="email" placeholder="username"></ion-input>
@@ -33,18 +39,20 @@
             <ion-input name="password" type="password" placeholder="Password"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-input name="confirm password" type="password" placeholder="Confirm Password">
+            <ion-input name="password" type="password" placeholder="Confirm Password">
             </ion-input>
           </ion-item>
+          <ion-item><h5>Enter Security Questions of your choice</h5></ion-item>
           <ion-item>
-            <ion-input name="securty question1 " type="text" placeholder="first security question"></ion-input>
+            <ion-label position="floating">First security question</ion-label>
+            <ion-input name="securty question1 " type="text" placeholder="Question"></ion-input>
           </ion-item>
-
           <ion-item>
             <ion-input placeholder="Answer here"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-input name="securty question2 " type="text" placeholder="Second Security question"></ion-input>
+            <ion-label position="floating">Second security question</ion-label>
+            <ion-input name="securty question2 " type="text" placeholder="Question"></ion-input>
           </ion-item>
           <ion-item>
             <ion-input placeholder="Answer here"></ion-input>
