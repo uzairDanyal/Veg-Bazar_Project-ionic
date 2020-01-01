@@ -1,14 +1,15 @@
+import { AbstractControl, FormBuilder, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
-import { Validators, FormGroup, AbstractControl, FormBuilder } from '@angular/forms';
+
+import { FormGroup } from '@angular/forms';
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.page.html',
-  styleUrls: ['./register.page.scss'],
+  styleUrls: ['./register.page.scss']
 })
 export class RegisterPage implements OnInit {
-
   constructor(private formBuilder: FormBuilder) {}
   registerForm: FormGroup;
 
@@ -51,6 +52,3 @@ export class RegisterPage implements OnInit {
     };
   }
 }
-
-
-

@@ -8,7 +8,8 @@
 </ion-header>
 
 <ion-content color="">
-  <!--
+  <form [formGroup]="registerForm">
+    <!--
   <ion-item (click)="userReg()">
     <ion-label>Register User</ion-label>
   </ion-item>
@@ -16,46 +17,46 @@
     <ion-label>Register Admin</ion-label>
   </ion-item>
 -->
-  <ion-grid>
-    <ion-row color="justify-content-center">
-      <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
-        <div class="ion-text-center">
-          <h3>Register Yourself</h3>
-        </div>
-        <div class="ion-padding">
-          <ion-item>
-            <ion-input name="name" type="text" placeholder="Name"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input name="email" type="email" placeholder="username"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input name="password" type="password" placeholder="Password"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input name="confirm password" type="password" placeholder="Confirm Password">
-            </ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input name="securty question1 " type="text" placeholder="first security question"></ion-input>
-          </ion-item>
+    <ion-grid>
+      <ion-row color="justify-content-center">
+        <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+          <div class="ion-text-center">
+            <h3>Register Yourself</h3>
+          </div>
+          <div class="ion-padding">
+            <ion-item>
+              <ion-input name="name" formControlName="name" type="text" placeholder="Name"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="email" formControlName="email" type="email" placeholder="username"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="password" formControlName="password"type="password" placeholder="Password"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="confirm password" formControlName="confirm_password" type="password" placeholder="Confirm Password">
+              </ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="securty question1 " type="text" placeholder="first security question"></ion-input>
+            </ion-item>
 
-          <ion-item>
-            <ion-input placeholder="Answer here"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input name="securty question2 " type="text" placeholder="Second Security question"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input placeholder="Answer here"></ion-input>
-          </ion-item>
-        </div>
-        <div class="ion-padding">
-          <ion-button size="large" [disabled]="" color="dark" type="submit" expand="block">Register
-          </ion-button>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
+            <ion-item>
+              <ion-input placeholder="Answer here"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="securty question2 " type="text" placeholder="Second Security question"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input placeholder="Answer here"></ion-input>
+            </ion-item>
+          </div>
+          <div class="ion-padding">
+            <ion-button size="large" [disabled]="" (click)="save()" color="dark" type="submit" expand="block">Register
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
 </ion-content>
