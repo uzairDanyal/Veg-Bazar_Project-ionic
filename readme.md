@@ -1,4 +1,6 @@
-Gui Register user, register store, login, forgot password, home page with logo 
+"All we do is, only effort. Rest is luck"
+Register user, register store, login, forgot password, home page with logo 
+with register user and login back-end
 total 5 pages
 
 
